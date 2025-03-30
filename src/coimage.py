@@ -78,8 +78,8 @@ def main(page: ft.Page):
     def save_image(e):
         if hasattr(page, "processed_image"):
             save_path = f"{image_path}(Compressed).jpg"
-            with open(save_path, "wb") as f:
-                f.write(page.processed_image)
+            with open(save_path, "wb") as file:
+                file.write(page.processed_image)
             update_status(f"Image saved as {save_path}")  # Update status
 
     # Function to handle resizing and compressing
