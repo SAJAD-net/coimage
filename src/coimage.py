@@ -1,7 +1,7 @@
 import flet as ft
 from PIL import Image
 import io
-import base64
+
 
 def main(page: ft.Page):
     page.title = "Image Resizer and Compressor"
