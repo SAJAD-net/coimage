@@ -34,7 +34,6 @@ def main(page: ft.Page):
             update_status("Processing image...", 0.5)  # Show progress
 
             img = Image.open(img_path)
-            original_size = img.size
 
             # Resize image
             new_size = (int(width), int(height))
@@ -49,8 +48,8 @@ def main(page: ft.Page):
             page.processed_image = byte_arr
 
             update_status("Image processed successfully!", 1.0)  # Complete progress
-        except Exception as e:
-            update_status(f"Error: {str(e)}", 0.0)  # Reset progress on error
+        except Exception as error:
+            update_status(f"Error: {str(error)}", 0.0)  # Reset progress on error
 
 
     # Function to handle file picker for opening images
