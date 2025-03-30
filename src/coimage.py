@@ -5,7 +5,7 @@ from PIL import Image
 
 def main(page: ft.Page):
     page.title = "Image Resizer and Compressor"
-    page.theme_mode = ft.ThemeMode.DARK  # Default theme
+    page.theme_mode = ft.ThemeMode.DARK  # Set the default theme to dark mode
     page.padding = 20
     page.window_width = 600  # Fixed window width
     page.window_height = 500  # Increased window height to accommodate progress bar and status
