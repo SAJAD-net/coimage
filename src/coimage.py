@@ -1,6 +1,6 @@
+import io
 import flet as ft
 from PIL import Image
-import io
 
 
 def main(page: ft.Page):
